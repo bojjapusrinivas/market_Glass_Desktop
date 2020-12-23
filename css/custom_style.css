@@ -93,6 +93,24 @@ main #content_block {
     margin: 0px 1px;
     font-size: 18px;
 }
+.appinfo {
+    position: absolute;
+    bottom: 50px;
+    display: block
+}
+.appinfo h3 {
+    font-size: 14px;
+    font-weight: 900;
+    font-family: arial;
+}
+.appinfo h6 {
+    font-size: 13px;
+    padding: 0px 15px;
+}
+.appinfo h6 span {
+    font-weight: bold;
+    color: #D3511F;
+}
 @media (max-width: 768px) {
     .top-strip {
         margin: 0px;
@@ -109,6 +127,9 @@ main #content_block {
     .top-strip h6 i {
         margin: 0px 5px;
         font-size: 15px;
+    }
+    .appinfo {
+        display: none;
     }
 }
 @media (max-width: 480px) {
@@ -202,10 +223,12 @@ main #content_block {
         text-align: center;
     }
     .aside ul li a {
-        font-size: 15px;
+        font-size: 13px;
         margin-top: 0px;
         color: #fff;
+        font-weight: 400;
     }
+    .aside ul li:hover a,
     .aside ul li.active a {
         color: #000;
     }
@@ -225,14 +248,17 @@ main #content_block {
         background-image: url(../img/icons_setting_white.svg);
         background-size: cover;
     }
+    .aside ul li:hover i.trend,
     .aside ul li.active i.trend {
         background-image: url(../img/icons_brand_black.svg);
         background-size: cover;
     }
+    .aside ul li:hover i.tracker,
     .aside ul li.active i.tracker {
         background-image: url(../img/icons_Tracker_black.svg);
         background-size: cover;
     }
+    .aside ul li:hover i.setting,
     .aside ul li.active i.setting {
         background-image: url(../img/icons_setting_black.svg);
         background-size: cover;
@@ -262,6 +288,7 @@ main #content_block {
     color: #666666;
     font-weight: bold;
     text-align: center;
+    font-size: 15px;
     background: #fff;
     border: 1px solid #dee2e6 !important;
 }
@@ -286,9 +313,10 @@ main #content_block {
     display: none;
 }
 .strip a {
-    font-size: 13px;
+    font-size: 11px;
     color: #1D72EF;
     text-decoration: 0px;
+    font-weight: 400;
 }
 
 /*---- MOBILE VERSION------*/
@@ -299,7 +327,8 @@ main #content_block {
     }
     #content_block .nav-tabs .nav-item .nav-link {
         border-radius: 0px 0px 0px 0px;
-        width: 100%
+        width: 100% font-size: 13px;
+        font-weight: 400px;
     }
 }
 @media (max-width: 768px) {

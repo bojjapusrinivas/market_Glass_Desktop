@@ -1,25 +1,112 @@
+a,
+a:hover,
+a.active,
+:hover,
+.active {
+    transition: all 0.2s linear;
+    -webkit- transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    -0-transition: all 0.2s linear;
+}
 .mg_cards {
     min-height: 120px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    border-bottom: none
 }
 .mg_cards a {
-    min-height: 120px;
+    min-height: 100px;
     text-decoration: none;
 }
 .mg_cards .border.shadow {
     height: 100%;
 }
 .mg_cards h5 {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     margin-top: 2px;
 }
 .mg_cards p {
     font-size: 13px;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 5px;
 }
 .mg_cards .other_support {
     font-size: 12px;
     color: #276AEA;
     position: absolute;
-    bottom: -10px;
+    bottom: 2px;
+}
+.mg_cards .other_support ul li a {
+    line-height: 24px
+}
+.mg_cards .other_support ul li a:hover,
+.mg_cards .other_support ul li a.active {
+    color: #D3511F
+}
+.mg_cards .other_support ul li a i {
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    display: block;
+    float: left;
+}
+.mg_cards .other_support ul li a i.my_silo {
+    background: url(../img/icon_user_blue.svg);
+    background-size: cover;
+}
+.mg_cards .other_support ul li a:hover i.my_silo,
+.mg_cards .other_support ul li a.active i.my_silo {
+    background: url(../img/icon_user_orange.svg);
+    background-size: cover;
+}
+.mg_cards .other_support ul li i.blog {
+    background: url(../img/icon_Blog_Blue.svg);
+    background-size: cover;
+}
+.mg_cards .other_support ul li:hover i.blog,
+.mg_cards .other_support ul li.active i.blog {
+    background: url(../img/icon_Blog_orange.svg);
+    background-size: cover;
+}
+.mg_cards .other_support ul li i.podcast {
+    background: url(../img/icon_pordcast_blue.svg);
+    background-size: cover;
+}
+.mg_cards .other_support ul li:hover i.podcast,
+.mg_cards .other_support ul li.active i.podcast {
+    background: url(../img/icon_pordcast_orange.svg);
+    background-size: cover;
+}
+.mg_cards .other_support ul li i.share {
+    background: url(../img/icon_share_blue.svg);
+    background-size: cover;
+}
+.mg_cards .other_support ul li:hover i.share,
+.mg_cards .other_support ul li.active i.share {
+    background: url(../img/icon_share_orange.svg);
+    background-size: cover;
+}
+@media (max-width: 1199px) {
+    .mg_cards .other_support {
+        position: relative;
+        bottom: 0px;
+    }
+    .mg_cards .other_support ul li a i {
+        margin: 0 auto;
+        display: block;
+        float: none;
+        clear: both;
+    }
+}
+@media (max-width: 768px) {
+    .mg_cards {
+        min-height: auto;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.0) !important;
+        border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
+    }
+    .mg_cards p {
+        margin-bottom: 5px;
+    }
 }
