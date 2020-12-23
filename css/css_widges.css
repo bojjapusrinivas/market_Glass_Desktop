@@ -1,0 +1,25 @@
+.mg_cards {
+    min-height: 120px;
+}
+.mg_cards a {
+    min-height: 120px;
+    text-decoration: none;
+}
+.mg_cards .border.shadow {
+    height: 100%;
+}
+.mg_cards h5 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.mg_cards p {
+    font-size: 13px;
+}
+.mg_cards .other_support {
+    font-size: 12px;
+    color: #276AEA;
+    position: absolute;
+    bottom: -10px;
+}
