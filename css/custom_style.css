@@ -327,7 +327,8 @@ main #content_block {
     }
     #content_block .nav-tabs .nav-item .nav-link {
         border-radius: 0px 0px 0px 0px;
-        width: 100% font-size: 13px;
+        width: 100%;
+        font-size: 13px;
         font-weight: 400px;
     }
 }
